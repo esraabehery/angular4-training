@@ -1,0 +1,12 @@
+<p>
+  users works!
+</p>
+<button (click)="onloadservers(1)">load servers</button>
+<div class="list-group">
+  <a [routerLink]="['/user']"
+      [queryParams]="{allowEdit: '1'}" fregment="loading" >
+  </a>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
